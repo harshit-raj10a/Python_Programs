@@ -50,4 +50,5 @@ class Solution:
             j1=len(A)
         for x in range(i1,j1):
             ans.append(x)
-        return ans '''
+        return ans
+        '''
