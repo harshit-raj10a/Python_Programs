@@ -16,7 +16,8 @@ Output :
 
 If there are multiple possible solutions, return the sequence which has the minimum start index.
 
-'''python 3.7.0
+
+'''python
 class Solution:
     def maxone(self, A, B):
         zero=0
@@ -51,4 +52,4 @@ class Solution:
         for x in range(i1,j1):
             ans.append(x)
         return ans
-        '''
+'''
