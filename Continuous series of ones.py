@@ -33,22 +33,30 @@ class Solution:
             if A[j]==1:
                 j+=1
             elif A[j]==0:
+                
                 zeroestot+=1
                 zero+=1
                 if zero>B:
-                    ind=abs(j-i)
-                    if mini<ind:
-                        mini=ind
-                        i1=i
-                        j1=j
                     i=jndi.pop(0)+1
                     zero-=2
                 else:
                     jndi.append(j)
                     j+=1
+            ind=abs(j-i)
+            if mini<ind:
+                mini=ind
+                i1=i
+                j1=j
         if zeroestot<=B:
             i1=0
             j1=len(A)
+        elif zeroestot==len(A):
+            i1=0
+            j1=B
         for x in range(i1,j1):
             ans.append(x)
         return ans
+                
+                
+            
+        
