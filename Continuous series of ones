@@ -16,7 +16,7 @@ Output :
 
 If there are multiple possible solutions, return the sequence which has the minimum start index.
 
-"""Python
+"""python
 class Solution:
     def maxone(self, A, B):
         zero=0
